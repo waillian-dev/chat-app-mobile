@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "675166507718",
+    "project_id": "convo-4306b",
+    "storage_bucket": "convo-4306b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675166507718:android:688f3ca5b942d137683dc7",
+        "android_client_info": {
+          "package_name": "com.waillian.convochat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_oVQnhMyAQ1zMN5Gip47QhUsO1erXuFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

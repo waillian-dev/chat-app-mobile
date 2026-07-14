@@ -2,7 +2,7 @@
   "expo": {
     "name": "ConvoChat",
     "slug": "ConvoChat",
-    "version": "1.0.0",
+    "version": "1.0.0.625",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -12,19 +12,49 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+
+    "cli": {
+      "appVersionSource": "local"
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.waillian.convochat",
+      "googleServicesFile": "./google-services.json",
+      "softwareKeyboardLayoutMode": "resize",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
       },
+      "useNextNotificationsApi": true,
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
+      
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      "@react-native-community/datetimepicker",
+      [
+
+      "expo-notifications",
+      {
+        "icon": "./assets/icon.png",
+        "color": "#007AFF",
+        "sounds": [
+          "./assets/notisound.mp3" 
+        ]
+      }
+    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7c9c784d-084e-4c95-9cf9-36e8eb245999"
+      }
+    },
+    "owner": "waillian"
   }
 }
